@@ -1,0 +1,14 @@
+.articleblock1__section3__sub-img {
+    padding: 250px;
+    width: 50vw;
+    margin-left: 5px;
+    background: rgba(0, 0, 0, 0.24);
+    text-align: center;
+
+}
+.articleblock1__section3__sub-img img {
+    transform: scale(3); 
+}
+
+
+/*margin-top: 170px;*/

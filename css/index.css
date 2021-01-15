@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url(https://image.freepik.com/foto-gratis/desenfoque-fondo-oficina-moderna_36268-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-duration: 10s;
+    animation-name: cuerpo;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.container {
+    padding-bottom: 50vh;
+}
+.container h1 {
+    text-align: center;
+    margin-top:40vh;
+    padding: 0;
+    font-size: 85px;
+    font-family:'Poppins', sans-serif ;
+    color: rgb(0, 0, 0);
+    transition: .5s;
+    overflow: hidden;
+}
+.container h1:hover {
+    color: #bbb;
+    transition: .5s;
+}
+.button-container {
+    text-align: center;
+    margin:20px;
+}
+.button-container a button {
+    font-family:'Poppins', sans-serif;
+    padding: 10px;
+    background: rgba(233, 233, 41, .7);
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    border: none;
+    transition: 0.5s;
+}
+.button-container a button:hover {
+    background:rgb(255, 255, 107) ;
+    transition: 0.5s;
+}
+.button-container a button:active {
+    background: rgb(255, 255, 0);
+    transition: 0s;
+}
+.container nav img {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 70px;
+    position: absolute;
+    top: 5%;
+    left: 1%;
+}
+@keyframes cuerpo {
+    50% {background-image: url(https://img.freepik.com/foto-gratis/blur-hospital-clinica-interior_1203-8624.jpg?size=626&ext=jpg);}
+
+}
+@media screen and (max-width:470px) {
+    .container h1 {
+        font-size: 70px;
+        animation: none;
+        margin-top: 38vh;
+    }
+    .container nav img {
+        top: 2%;
+        width:50px;
+    }
+    .button-container a button {
+        padding: 20px;
+    }
+}
+@media screen and (min-width:1200px) {
+    .container {
+        padding-bottom: 30vh;
+    }
+}
